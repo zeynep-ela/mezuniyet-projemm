@@ -1,5 +1,8 @@
+from confing import TOKEN,DATABASE
 def kariyer_botu():
     print(" Kariyer Danışman Botu'na Hoş Geldin! \n")
+    print(f" [DEBUG] TOKEN: {TOKEN}")
+    print(f" [DEBUG] DATABASE BAĞLANTISI: {DATABASE['host']}:{DATABASE['port']}")
 
     # Kullanıcıdan bilgiler al
     ilgi_alani = input(" İlgi alanların nelerdir? (örn: yazılım, sağlık, sanat): ").lower()
@@ -38,4 +41,5 @@ def kariyer_botu():
     print("\n Umarım bu öneriler yoluna ışık tutar!")
 
 # Botu çalıştır
-kariyer_botu()
+if "_name_" == "_main_":
+    kariyer_botu()

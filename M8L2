@@ -1,0 +1,41 @@
+def kariyer_botu():
+    print(" Kariyer Danışman Botu'na Hoş Geldin! \n")
+
+    # Kullanıcıdan bilgiler al
+    ilgi_alani = input(" İlgi alanların nelerdir? (örn: yazılım, sağlık, sanat): ").lower()
+    guclu_yonler = input(" Güçlü yönlerin neler? (örn: analitik düşünme, iletişim, yaratıcılık): ").lower()
+    egitim = input(" Eğitim seviyen nedir? (örn: lise, üniversite, yüksek lisans): ").lower()
+
+    print("\n Önerilerim hazırlanıyor...\n")
+
+    # Öneri sistemi
+    if "yazılım" in ilgi_alani or "teknoloji" in ilgi_alani:
+        if "analitik" in guclu_yonler or "problem" in guclu_yonler:
+            print("-  Yazılım Geliştirici olmayı düşünebilirsin.")
+            print("-  Veri Analisti için de uygun olabilirsin.")
+            print(" Python, SQL, Git öğrenmeye başlayabilirsin.")
+    
+    if "sanat" in ilgi_alani or "tasarım" in ilgi_alani:
+        if "yaratıcılık" in guclu_yonler:
+            print("-  Grafik Tasarımcı ya da UI/UX Tasarımcı olabilirsin.")
+            print(" Adobe XD, Figma, Canva gibi araçları öğrenebilirsin.")
+
+    if "sağlık" in ilgi_alani:
+        print("-  Hemşirelik, sağlık teknikerliği veya fizyoterapistlik gibi alanlara yönelebilirsin.")
+        print(" Sağlık meslek yüksekokullarını veya ilgili lisans bölümlerini araştırabilirsin.")
+
+    if "iletişim" in guclu_yonler:
+        print("-  İletişim gücünle pazarlama, satış veya insan kaynaklarında başarılı olabilirsin.")
+        print(" Sosyal medya yönetimi ve müşteri ilişkileri eğitimi faydalı olur.")
+
+    if egitim == "lise":
+        print("\n Eğitimini üniversiteyle desteklemek kariyer seçeneklerini artırabilir.")
+    elif egitim == "üniversite":
+        print("\n Alanında staj veya sertifika programlarına katılabilirsin.")
+    elif egitim == "yüksek lisans":
+        print("\n Uzmanlaşmak istediğin alana yönelip akademik kariyer de düşünebilirsin.")
+
+    print("\n Umarım bu öneriler yoluna ışık tutar!")
+
+# Botu çalıştır
+kariyer_botu()
